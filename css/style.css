@@ -1,4 +1,4 @@
-/* Base */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -88,7 +88,7 @@ section {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-h2 {
+h2,h3 {
     font-family: 'Original Surfer', sans-serif;
     color: #4a80b0;
     margin-top: 0;
@@ -104,7 +104,7 @@ body > h1 {
     margin-top: 0;
 }
 
-/* Images - Marco sutil y centrado */
+/* Imagenes*/
 img {
     max-width: 100%;
     height: auto;
@@ -115,7 +115,7 @@ img {
     border: 2px solid #e0ebf5; 
 }
 
-/* Excepciones para logos en listas (patrocinios) */
+
 li img {
     display: inline-block;
     vertical-align: middle;
@@ -146,10 +146,41 @@ label {
     color: #4a80b0;
 }
 
-input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-input[type="password"], 
+
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
 textarea {
     padding: 10px;
     border: 1px solid #ccc;
@@ -157,6 +188,7 @@ textarea {
     font-family: inherit;
     width: 100%;
     box-sizing: border-box;
+    resize: vertical;
 }
 
 input[type="checkbox"] {
@@ -201,8 +233,24 @@ button[type="submit"]:hover {
     background-color: #4a80b0;
 }
 
-/* Images */
-.chips-image, .persona-image, .micro-image {
+/* Imágenes */
+.chips-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.persona-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.micro-image {
     max-width: 100%;
     height: auto;
     display: block;
@@ -225,6 +273,8 @@ footer a {
     margin: 0 15px;
     vertical-align: middle;
 }
+
+/*Logos*/
 
 .facebook-icon img {
     display: block;
@@ -250,8 +300,8 @@ footer a {
 
 .linkedin-logo img {
     display: block;
-    height: 8em;
-    width: 8em;
+    height: 8.3em;
+    width: 8.3em;
     object-fit: contain;
     margin: 0;
     box-shadow: none;
@@ -298,10 +348,11 @@ footer a {
     .menu-toggle:checked ~ .menu {
         display: block;
     }
+
     .menu ul {
         flex-direction: column;
-    }
-    
+    } 
+
     .menu li {
         margin: 5px 0;
     }
