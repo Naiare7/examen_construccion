@@ -22,6 +22,12 @@ body {
     font-size: 5.6em;
 }
 
+.logo-oido {
+    height: 80px;
+    width: auto;
+    margin-top: -10px;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
