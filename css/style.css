@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Original Surfer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #9fb4c4 0%, #7a99aa 100%);
+    min-height: 100vh;
+    color: #75797c;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #8dadae;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1rem;
+    text-align: center;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1rem;
+}
+.welcome {
+    padding: 2rem;
+    background-color: #e0e0e0;
+}
+.about  {
+    padding: 2rem;
+}
+.services   {
+    padding: 2rem;
+    background-color: #e0e0e0;
+}
+.testimonials {
+    padding: 2rem;
+}
+.micro-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.testimonios-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}       
