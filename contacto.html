@@ -7,12 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/contacto.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
 </head>
 <body>
      <header class="header">
         <h1>EARCHIPS</h1>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
         <nav class="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -62,8 +64,9 @@
                 </div>
 
                 <div>
-                    <label for="privacidad">He leído y acepto la política de privacidad</label>
                     <input type="checkbox" name="privacidad" id="privacidad" required>
+                    <label for="privacidad" style="display: inline;">He leído y acepto la política de privacidad</label>
+
                 </div>
 
                 <div class="form-group">

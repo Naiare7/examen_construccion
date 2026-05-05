@@ -1,0 +1,38 @@
+.servicios-container {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #abc5de;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.value {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #abc5de;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.servicios-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.clientes1-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.clientes2-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}

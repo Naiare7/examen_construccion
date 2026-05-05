@@ -1,0 +1,72 @@
+/* Estilos para que se asemeje a index.html */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #abc5de;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.colaboradores {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #abc5de;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Logos de los patrocinadores */
+li img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    height: 40px;
+    width: auto;
+}
+
+/* Centrar formulario */
+form {
+    max-width: 400px;
+    margin: 20px auto 0 auto;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4a80b0;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #abc5de;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4a80b0;
+}
