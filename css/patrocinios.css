@@ -1,4 +1,4 @@
-/* Estilos para que se asemeje a index.html */
+
 section {
     background-color: white;
     padding: 25px;
@@ -21,15 +21,53 @@ section {
 }
 
 /* Logos de los patrocinadores */
-li img {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-    height: 40px;
-    width: auto;
+
+.kutxa-log img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 348px;
+    height: 96px;
+    object-fit: contain;
 }
 
-/* Centrar formulario */
+.laboral-log img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 348px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.eusko-log img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 348px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.fiapas-log img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 348px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.gobierno-log img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 348px;
+    height: 96px;
+    object-fit: contain;
+}
+
+/* Formulario */
 form {
     max-width: 400px;
     margin: 20px auto 0 auto;
@@ -42,8 +80,17 @@ label {
     color: #4a80b0;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"] {
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 15px;
