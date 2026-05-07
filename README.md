@@ -17,14 +17,26 @@ Todo el diseño visual y la estructura responsive se han implementado utilizando
 
 - HTML5 para la estructura semántica.
 - CSS3 para el diseño, maquetación y el responsive para diferentes dispositivos.
+- Javascript para el funcionamiento dinámico de la paǵina.
 
 ## Ejecución
 
 Al ser un proyecto estático, no requiere de la instalación de dependencias ni servidores locales. Para probar la web, basta con descargar los archivos y abrir el documento `index.html` en cualquier navegador moderno.
 
+Para probar que JavaScript es funcional:
+- Fecha: En todas las pestañas de la página se indica la fecha y día de la semana actualizada.
+
+Patrocinios:
+- Al loguearse un usuario, el login queda validado y da la bienvenida.
+- Al introducir la contraseña, el usuario tiene la opción de comprobar lo que ha escrito, mostrando u ocultando dicha contraseña.
+- Si el usuario hace check en recordarme, el usuario queda registrado para futuros logueos.
+
+Contacto:
+- Se valida el formulario de contacto, mostrando los datos introducidos en un alert para que el usuario compruebe los datos que se han enviado.
+
 ## Autor y Contacto
 
-**Autor:** Naia Arenaza Salzar 
+**Autor:** Naia Arenaza Salazar 
 **Correo electrónico:** naia.arenaza88@gmail.com  
 **GitHub:** github.com/Naiare7  
 

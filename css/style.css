@@ -28,6 +28,15 @@ body {
     margin-top: -10px;
 }
 
+#fecha {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    color: #f0f8ff;
+}
+
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -365,6 +374,12 @@ footer a {
 
     .header h1 {
         font-size: 2em;
+    }
+
+     #fecha {
+        position: static;
+        font-size: 0.8em;
+        margin-top: 5px;
     }
 }
 

@@ -1,98 +1,118 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap"rel="stylesheet"/>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="css/patrocinios.css" />
-    <title>Patrocinios</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <h1>EARCHIPS</h1>
-      <img class="logo-oido" src="/img/logo-oido.jpg" alt="Logo EARCHIPS">
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="patrocinios.html">Patrocinios</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="css/patrocinios.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Patrocinios</title>
+</head>
 
-    <section>
-      <h2>Patrocinios</h2>
-      <p>
-        En EARCHIPS, contamos con el apoyo de importantes patrocinadores que
-        comparten nuestra visión y valores. Gracias a su confianza, podemos
-        seguir innovando y ofreciendo soluciones accesibles para personas
-        sordas.
-      </p>
-    </section>
-
-    <section>
-      <h3>Nuestros Patrocinadores</h3>
-      <p>
-        Gracias a los siguientes patrocinadores, podemos seguir desarrollando
-        nuestras soluciones:
-      </p>
+<body onload="cargarFecha()">
+  <header class="header">
+    <h1>EARCHIPS</h1>
+    <img class="logo-oido" src="/img/logo-oido.jpg" alt="Logo EARCHIPS" />
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <nav class="menu">
       <ul>
-        <li class="kutxa-log">Kutxabank <img src="/img/kutxabank.jpg" alt="Kutxabank" /></li>
-        <li class="laboral-log">Laboral Kutxa <img src="/img/laboralk.jpg" alt="Laboral Kutxa"/></li>
-        <li class="eusko-log">Eusko Jaurlaritza / Gobierno Vasco<img src="/img/eusk.jpg" alt="Eusko Jaurlaritza / Gobierno Vasco"/></li>
-        <li class="fiapas-log">FIAPAS - Confederación española de familias sordas<img src="/img/as_fam_sord.jpg"alt="FIAPAS"/></li>
-        <li class="gobierno-log">Gobierno de España<img src="/img/logo_esp.jpg" alt="Gobierno de España"/>
-        </li>
-        <li>Donaciones privadas</li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="patrocinios.html">Patrocinios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </section>
+    </nav>
+    <p id="fecha"></p>
+  </header>
 
-    <section>
-      <h3>Colaboradores</h3>
-      <p>
-        También contamos con el apoyo de importantes colaboradores que comparten
-        nuestra visión y valores. Gracias a su confianza, podemos seguir
-        innovando y ofreciendo soluciones accesibles para personas sordas.</p>
+  <section>
+    <h2>Patrocinios</h2>
+    <p>
+      En EARCHIPS, contamos con el apoyo de importantes patrocinadores que
+      comparten nuestra visión y valores. Gracias a su confianza, podemos
+      seguir innovando y ofreciendo soluciones accesibles para personas
+      sordas.
+    </p>
+  </section>
 
-      <p>Nos encantaría que tu fueras uno de ellos</p>
-    </section>
+  <section>
+    <h3>Nuestros Patrocinadores</h3>
+    <p>
+      Gracias a los siguientes patrocinadores, podemos seguir desarrollando
+      nuestras soluciones:
+    </p>
+    <ul>
+      <li class="kutxa-log">
+        Kutxabank <img src="/img/kutxabank.jpg" alt="Kutxabank" />
+      </li>
+      <li class="laboral-log">
+        Laboral Kutxa <img src="/img/laboralk.jpg" alt="Laboral Kutxa" />
+      </li>
+      <li class="eusko-log">
+        Eusko Jaurlaritza / Gobierno Vasco<img src="/img/eusk.jpg" alt="Eusko Jaurlaritza / Gobierno Vasco" />
+      </li>
+      <li class="fiapas-log">
+        FIAPAS - Confederación española de familias sordas<img src="/img/as_fam_sord.jpg" alt="FIAPAS" />
+      </li>
+      <li class="gobierno-log">
+        Gobierno de España<img src="/img/logo_esp.jpg" alt="Gobierno de España" />
+      </li>
+      <li>Donaciones privadas</li>
+    </ul>
+  </section>
 
-    <div class="colaboradores">
-      <h3>¿Quieres ser nuestro colaborador?</h3>
+  <section>
+    <h3>Colaboradores</h3>
+    <p>
+      También contamos con el apoyo de importantes colaboradores que comparten
+      nuestra visión y valores. Gracias a su confianza, podemos seguir
+      innovando y ofreciendo soluciones accesibles para personas sordas.
+    </p>
 
-      <p>Sólo tienes que inscribirte en nuestro formulario de colaboración</p>
+    <p>Nos encantaría que tu fueras uno de ellos</p>
+  </section>
 
-      <form action="login.php" method="POST">
-        <label for="username">Usuario:</label>
-        <input type="text" id="username" name="username" required />
+  <div class="colaboradores">
+    <h3>¿Quieres ser nuestro colaborador?</h3>
 
-        <label for="password">Contraseña:</label>
+    <p>Sólo tienes que inscribirte en nuestro formulario de colaboración</p>
+
+    <form action="login.php" method="POST">
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="password">Contraseña:</label>
+      <div class="password-field">
         <input type="password" id="password" name="password" required />
+        <i id="eyeIcon" class="fa-solid fa-eye-slash toggle-password"></i>
+      </div>
+      <div>
+        <input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Recordarme</label>
+      </div>
 
-        <div>
-          <input type="checkbox" id="remember" name="remember" />
-          <label for="remember" style="display: inline;">Recordarme</label>
-        </div>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
 
-        <button type="submit">Iniciar Sesión</button>
-      </form>
-    </div>
+  <footer>
+    <p>&copy; 2026 EARCHIPS. Todos los derechos reservados.</p>
+    <p>Síguenos en redes sociales:</p>
+    <a class="facebook-icon" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook-icon.png"
+        alt="Facebook" /></a>
+    <a class="ig-icon" href="https://www.instagram.com/" target="_blank"><img src="/img/ig-icon.png"
+        alt="Instagram" /></a>
+    <a class="linkedin-logo" href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin-logo.jpg"
+        alt="LinkedIn" /></a>
+  </footer>
 
-     <footer>
-        <p>&copy; 2026 EARCHIPS. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales:</p>
-        <a class="facebook-icon" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook-icon.png" alt="Facebook"></a>
-        <a class="ig-icon" href="https://www.instagram.com/" target="_blank"><img src="/img/ig-icon.png" alt="Instagram"></a>
-        <a class="linkedin-logo" href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin-logo.jpg" alt="LinkedIn"></a>
-    </footer>
-  </body>
+  <script src="./js/script.js"></script>
+</body>
+
 </html>

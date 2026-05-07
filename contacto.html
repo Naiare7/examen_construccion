@@ -1,20 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="css/contacto.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
     <title>Contacto</title>
 </head>
-<body>
-     <header class="header">
+
+<body onload="cargarFecha()">
+    <header class="header">
         <h1>EARCHIPS</h1>
-        <img class="logo-oido" src="/img/logo-oido.jpg" alt="Logo EARCHIPS">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <img class="logo-oido" src="/img/logo-oido.jpg" alt="Logo EARCHIPS" />
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
         <label for="menu-toggle" class="hamburger">&#9776;</label>
         <nav class="menu">
             <ul>
@@ -25,67 +27,61 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <p id="fecha"></p>
     </header>
 
     <div class="container">
         <div class="contact-form">
-            <p>Si quieres hablar con nosotros, rellena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            <p>
+                Si quieres hablar con nosotros, rellena el siguiente formulario y nos
+                pondremos en contacto contigo lo antes posible.
+            </p>
             <h2>Contacto</h2>
             <p>Envíanos un mensaje y te responderemos lo antes posible</p>
-            
-            <form action="#" method="GET">
-                <div class="form-group">
-                    <label for="nombre">Nombre y Apellidos *</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="telefono">Teléfono *</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="+xx xxx xxx xxx">
-                </div>
-                
-                <div class="form-group">
-                    <label for="asunto">Asunto *</label>
-                    <input type="text" id="asunto" name="asunto" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                </div>
 
-                <div>
-                    <input type="checkbox" name="privacidad" id="privacidad" required>
-                    <label for="privacidad" style="display: inline;">He leído y acepto la política de privacidad</label>
+            <form onsubmit="return validarFormulario()">
+                <label for="nombre">Nombre y Apellidos *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellidos" required>
 
-                </div>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="miemail@email.com" required>
 
-                <div class="form-group">
-                    <button type="submit">Enviar Mensaje</button>
-                </div>  
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+xx xxxxxxxxx" required>
+
+                <label for="asunto">Asunto *</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
             </form>
-            
+
             <div class="contact-info">
                 <h3>Información de Contacto</h3>
                 <p><strong>Teléfono:</strong> +123 456 789</p>
-                <p><strong>Email:</strong> <a href="mailto:[EMAIL_ADDRESS]">email@email.com</a></p>
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:[EMAIL_ADDRESS]">email@email.com</a>
+                </p>
                 <p><strong>Dirección:</strong> Calle Principal 123, Ciudad</p>
             </div>
         </div>
     </div>
 
-   <footer>
+    <footer>
         <p>&copy; 2026 EARCHIPS. Todos los derechos reservados.</p>
         <p>Síguenos en redes sociales:</p>
-        <a class="facebook-icon" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook-icon.png" alt="Facebook"></a>
-        <a class="ig-icon" href="https://www.instagram.com/" target="_blank"><img src="/img/ig-icon.png" alt="Instagram"></a>
-        <a class="linkedin-logo" href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin-logo.jpg" alt="LinkedIn"></a>
+        <a class="facebook-icon" href="https://www.facebook.com/" target="_blank"><img src="/img/facebook-icon.png"
+                alt="Facebook" /></a>
+        <a class="ig-icon" href="https://www.instagram.com/" target="_blank"><img src="/img/ig-icon.png"
+                alt="Instagram" /></a>
+        <a class="linkedin-logo" href="https://www.linkedin.com/" target="_blank"><img src="/img/linkedin-logo.jpg"
+                alt="LinkedIn" /></a>
     </footer>
 
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
